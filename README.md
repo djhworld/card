@@ -43,9 +43,6 @@ djhworld/card|master ✗ ▶ time card items.txt
 card items.txt  0.51s user 0.04s system 98% cpu 0.556 total
 ```
 
-Most of the `sort | uniq` time is spent during the `sort` phase, so it's not a fully fair comparison, you could use something like https://github.com/djhworld/count instead which uses a set data structure and does one pass over the input. However, this is still memory intensive if the cardinality of your input set is high.
+Most of the `sort | uniq` time is spent during the `sort` phase, so it's not a fully fair comparison, you could use something like my other tool [count](https://github.com/djhworld/count) that does one pass over the input. 
 
-
-
-
-
+However, this memory intensive if the cardinality of your input set is high, `card` has a very minimal memory footprint.
