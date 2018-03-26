@@ -45,7 +45,7 @@
 			"importpath": "gopkg.in/yaml.v2",
 			"repository": "https://gopkg.in/yaml.v2",
 			"vcs": "git",
-			"revision": "7f97868eec74b32b0982dd158a51a446d1da7eb5",
+			"revision": "86f5ed62f8a0ee96bd888d2efdfd6d4fb100a4eb",
 			"branch": "master",
 			"notests": true
 		}
