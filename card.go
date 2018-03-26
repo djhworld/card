@@ -91,8 +91,13 @@ func main() {
 	}
 	app.Name = "card"
 	app.Usage = "Estimates cardinality (count-distinct) of inputs using HyperLogLog++ algorithm"
-	app.ArgsUsage = "file to read from (optional - defaults to stdin)"
-	app.UsageText = "card [-p] <file>\n\n\t if <file> is not provided, stdin will be used instead"
+	app.UsageText = "card [-p] <input_file>\n\n\t if input_file is a single dash (`-`) or absent, the standard input is read."
+	app.Authors = []cli.Author{
+		cli.Author{
+			Name:  "Daniel Harper",
+			Email: "@djhworld",
+		},
+	}
 	app.Action = execute
 	app.Run(os.Args)
 }
