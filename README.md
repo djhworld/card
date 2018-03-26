@@ -25,7 +25,7 @@ djhworld/card|master ✗ ▶ wc -l items.txt
 2000000 items.txt
 ```
 
-Using `sort | uniq`, this takes roughly 25 seconds to complete on my machine. Most of this time is spent during the `sort` phase.
+Using `sort | uniq`, this takes roughly 25 seconds to complete on my machine. 
 
 ```bash
 djhworld/card|master ✗ ▶ time sort items.txt | uniq | wc -l
@@ -43,6 +43,7 @@ djhworld/card|master ✗ ▶ time card items.txt
 card items.txt  0.51s user 0.04s system 98% cpu 0.556 total
 ```
 
+Most of the `sort | uniq` time is spent during the `sort` phase, so it's not a fully fair comparison, you could use something like https://github.com/djhworld/count instead which uses a set data structure and does one pass over the input. However, this is still memory intensive if the cardinality of your input set is high.
 
 
 
