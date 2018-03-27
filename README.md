@@ -1,6 +1,15 @@
+# card
+
 Command line tool that estimates the cardinality (count-distinct) of inputs using HyperLogLog++ algorithm.
 
 See https://djhworld.github.io/hyperloglog for more information.
+
+
+## Installation
+
+```bash
+go get -u github.com/djhworld/card
+```
 
 ## Usage
 
@@ -45,4 +54,4 @@ card items.txt  0.51s user 0.04s system 98% cpu 0.556 total
 
 Most of the `sort | uniq` time is spent during the `sort` phase, so it's not a fully fair comparison, you could use something like my other tool [count](https://github.com/djhworld/count) that does one pass over the input. 
 
-However, this memory intensive if the cardinality of your input set is high, `card` has a very minimal memory footprint.
+However, this could be memory intensive if the cardinality of your input set is high, `card` has a very minimal memory footprint.
