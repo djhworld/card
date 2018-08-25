@@ -1,0 +1,6 @@
+github.com/clarkduvall/hyperloglog v0.0.0-20171127014514-a0107a5d8004 h1:mK6JroY6bLiPS3s6QCYOSjRyErFc2iHNkhhmRfF0nHo=
+github.com/clarkduvall/hyperloglog v0.0.0-20171127014514-a0107a5d8004/go.mod h1:drodPoQNro6QBO6TJ/MpMZbz8Bn2eSDtRN6jpG4VGw8=
+github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72 h1:qLC7fQah7D6K1B0ujays3HV9gkFtllcxhzImRR7ArPQ=
+github.com/spaolacci/murmur3 v0.0.0-20180118202830-f09979ecbc72/go.mod h1:JwIasOWyU6f++ZhiEuf87xNszmSA2myDM2Kzu9HwQUA=
+gopkg.in/urfave/cli.v1 v1.19.1 h1:pkwzWQSFerxgLtkdWlnjwOS+Vd7VCp/Kwdn3kmeflXQ=
+gopkg.in/urfave/cli.v1 v1.19.1/go.mod h1:vuBzUtMdQeixQj8LVd+/98pzhxNGQoyuPBlsXHOQNO0=
